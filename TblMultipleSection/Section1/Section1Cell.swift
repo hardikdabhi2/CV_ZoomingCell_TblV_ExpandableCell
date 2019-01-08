@@ -10,6 +10,7 @@ import UIKit
 
 class Section1Cell: UITableViewCell {
     @IBOutlet weak var labelTitle:UILabel!
+    var array:NSArray = []
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
