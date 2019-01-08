@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionviewBanner :UICollectionView!
     
      let imageView = UIView()
+    var arrayCar = ["car1.jpg","car2.jpeg","car3.jpg","car4.jpg"];
     
     
     var arryData = [cellData]()
@@ -61,38 +62,38 @@ extension ViewController:UICollectionViewDataSource,UICollectionViewDelegate{
         return 1
         }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.arrayCar.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier:"Cell", for: indexPath)
+        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier:"Cell", for: indexPath) as! CollectionViewCell
+        cell.imageView.image = UIImage(named: self.arrayCar[indexPath.row])
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let imageInfo = GSImageInfo(image:UIImage(named: "food")!, imageMode:.aspectFit)
+        let imageInfo = GSImageInfo(image:UIImage(named:self.arrayCar[indexPath.row])!, imageMode:.aspectFit)
         let transInfo = GSTransitionInfo(fromView: collectionView)
         let imageviewr = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transInfo)
         self.present(imageviewr, animated: true, completion: nil)
     }
-    
 }
 
 extension ViewController:UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = UIScreen.main.bounds
+        let size = self.collectionviewBanner.frame.size
         return CGSize(width:size.width, height:size.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }

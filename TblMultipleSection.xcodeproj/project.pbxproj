@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A2C1DCA221E467D40034FE28 /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1DCA121E467D40034FE28 /* GSImageViewerController.swift */; };
+		A2C1DCA521E474740034FE28 /* car4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1DCA421E474740034FE28 /* car4.jpg */; };
+		A2C1DCA721E4747B0034FE28 /* car1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1DCA621E4747B0034FE28 /* car1.jpg */; };
+		A2C1DCA921E474800034FE28 /* car2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1DCA821E474800034FE28 /* car2.jpeg */; };
+		A2C1DCAB21E474850034FE28 /* car3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1DCAA21E474850034FE28 /* car3.jpg */; };
+		A2C1DCAE21E475470034FE28 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1DCAD21E475470034FE28 /* CollectionViewCell.swift */; };
 		A2C9081021E3175400860365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9080F21E3175400860365 /* AppDelegate.swift */; };
 		A2C9081221E3175400860365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9081121E3175400860365 /* ViewController.swift */; };
 		A2C9081521E3175400860365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9081321E3175400860365 /* Main.storyboard */; };
@@ -31,6 +36,11 @@
 
 /* Begin PBXFileReference section */
 		A2C1DCA121E467D40034FE28 /* GSImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSImageViewerController.swift; sourceTree = "<group>"; };
+		A2C1DCA421E474740034FE28 /* car4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car4.jpg; sourceTree = "<group>"; };
+		A2C1DCA621E4747B0034FE28 /* car1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car1.jpg; sourceTree = "<group>"; };
+		A2C1DCA821E474800034FE28 /* car2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car2.jpeg; sourceTree = "<group>"; };
+		A2C1DCAA21E474850034FE28 /* car3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car3.jpg; sourceTree = "<group>"; };
+		A2C1DCAD21E475470034FE28 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A2C9080C21E3175400860365 /* TblMultipleSection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TblMultipleSection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C9080F21E3175400860365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2C9081121E3175400860365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +83,25 @@
 			path = HelperClass;
 			sourceTree = "<group>";
 		};
+		A2C1DCA321E474630034FE28 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A2C1DCAA21E474850034FE28 /* car3.jpg */,
+				A2C1DCA821E474800034FE28 /* car2.jpeg */,
+				A2C1DCA621E4747B0034FE28 /* car1.jpg */,
+				A2C1DCA421E474740034FE28 /* car4.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A2C1DCAC21E475140034FE28 /* CarCell */ = {
+			isa = PBXGroup;
+			children = (
+				A2C1DCAD21E475470034FE28 /* CollectionViewCell.swift */,
+			);
+			path = CarCell;
+			sourceTree = "<group>";
+		};
 		A2C9080321E3175400860365 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +121,8 @@
 		A2C9080E21E3175400860365 /* TblMultipleSection */ = {
 			isa = PBXGroup;
 			children = (
+				A2C1DCAC21E475140034FE28 /* CarCell */,
+				A2C1DCA321E474630034FE28 /* Images */,
 				A2C1DCA021E467C90034FE28 /* HelperClass */,
 				A2C9084421E3591C00860365 /* TestVC */,
 				A2C9083821E34BAD00860365 /* HeaderView */,
@@ -232,11 +263,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C9083721E3462F00860365 /* SectionCommentCell.xib in Resources */,
+				A2C1DCAB21E474850034FE28 /* car3.jpg in Resources */,
+				A2C1DCA921E474800034FE28 /* car2.jpeg in Resources */,
 				A2C9081D21E3175800860365 /* LaunchScreen.storyboard in Resources */,
+				A2C1DCA521E474740034FE28 /* car4.jpg in Resources */,
 				A2C9084D21E35E2700860365 /* ImgCell.xib in Resources */,
 				A2C9081A21E3175800860365 /* Assets.xcassets in Resources */,
 				A2C9082E21E3188C00860365 /* Section2Cell.xib in Resources */,
 				A2C9084821E3591C00860365 /* TestVC.xib in Resources */,
+				A2C1DCA721E4747B0034FE28 /* car1.jpg in Resources */,
 				A2C9081521E3175400860365 /* Main.storyboard in Resources */,
 				A2C9082A21E3187B00860365 /* Section1Cell.xib in Resources */,
 				A2C9083221E3189A00860365 /* Section3Cell.xib in Resources */,
@@ -252,6 +287,7 @@
 			files = (
 				A2C9081221E3175400860365 /* ViewController.swift in Sources */,
 				A2C9081821E3175500860365 /* TblMultipleSection.xcdatamodeld in Sources */,
+				A2C1DCAE21E475470034FE28 /* CollectionViewCell.swift in Sources */,
 				A2C9082D21E3188C00860365 /* Section2Cell.swift in Sources */,
 				A2C9083621E3462F00860365 /* SectionCommentCell.swift in Sources */,
 				A2C9083121E3189A00860365 /* Section3Cell.swift in Sources */,

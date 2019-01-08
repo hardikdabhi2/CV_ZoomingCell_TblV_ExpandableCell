@@ -38,7 +38,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kHM-Oe-6Kt">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kHM-Oe-6Kt" customClass="CollectionViewCell" customModule="TblMultipleSection" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-1" width="320" height="172"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -56,6 +56,9 @@
                                                             <constraint firstItem="kEV-xE-BQd" firstAttribute="leading" secondItem="kHM-Oe-6Kt" secondAttribute="leading" id="W4X-5C-0uo"/>
                                                             <constraint firstItem="kEV-xE-BQd" firstAttribute="top" secondItem="kHM-Oe-6Kt" secondAttribute="top" id="dgb-Wu-9Yv"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outlet property="imageView" destination="kEV-xE-BQd" id="hKr-Hn-Tv3"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                                 <connections>
