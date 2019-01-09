@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A236E4DE21E5B1B80004A3C2 /* BrandListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236E4DD21E5B1B80004A3C2 /* BrandListVC.swift */; };
+		A236E4E221E5B4C10004A3C2 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236E4E021E5B4C10004A3C2 /* BrandCell.swift */; };
+		A236E4E321E5B4C10004A3C2 /* BrandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A236E4E121E5B4C10004A3C2 /* BrandCell.xib */; };
+		A236E4E821E5B61F0004A3C2 /* toyota.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A236E4E421E5B61E0004A3C2 /* toyota.jpg */; };
+		A236E4E921E5B61F0004A3C2 /* audi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A236E4E521E5B61E0004A3C2 /* audi.jpeg */; };
+		A236E4EA21E5B61F0004A3C2 /* marchedrs.png in Resources */ = {isa = PBXBuildFile; fileRef = A236E4E621E5B61E0004A3C2 /* marchedrs.png */; };
+		A236E4EB21E5B61F0004A3C2 /* bmw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A236E4E721E5B61E0004A3C2 /* bmw.jpg */; };
 		A2C1DCA221E467D40034FE28 /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C1DCA121E467D40034FE28 /* GSImageViewerController.swift */; };
 		A2C1DCA521E474740034FE28 /* car4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1DCA421E474740034FE28 /* car4.jpg */; };
 		A2C1DCA721E4747B0034FE28 /* car1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C1DCA621E4747B0034FE28 /* car1.jpg */; };
@@ -35,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A236E4DD21E5B1B80004A3C2 /* BrandListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListVC.swift; sourceTree = "<group>"; };
+		A236E4E021E5B4C10004A3C2 /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
+		A236E4E121E5B4C10004A3C2 /* BrandCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandCell.xib; sourceTree = "<group>"; };
+		A236E4E421E5B61E0004A3C2 /* toyota.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toyota.jpg; sourceTree = "<group>"; };
+		A236E4E521E5B61E0004A3C2 /* audi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = audi.jpeg; sourceTree = "<group>"; };
+		A236E4E621E5B61E0004A3C2 /* marchedrs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marchedrs.png; sourceTree = "<group>"; };
+		A236E4E721E5B61E0004A3C2 /* bmw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bmw.jpg; sourceTree = "<group>"; };
 		A2C1DCA121E467D40034FE28 /* GSImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSImageViewerController.swift; sourceTree = "<group>"; };
 		A2C1DCA421E474740034FE28 /* car4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car4.jpg; sourceTree = "<group>"; };
 		A2C1DCA621E4747B0034FE28 /* car1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car1.jpg; sourceTree = "<group>"; };
@@ -75,6 +89,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A236E4DC21E5B1660004A3C2 /* ViewControllerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A236E4DF21E5B4760004A3C2 /* BrandCell */,
+				A236E4DD21E5B1B80004A3C2 /* BrandListVC.swift */,
+			);
+			path = ViewControllerFiles;
+			sourceTree = "<group>";
+		};
+		A236E4DF21E5B4760004A3C2 /* BrandCell */ = {
+			isa = PBXGroup;
+			children = (
+				A236E4E021E5B4C10004A3C2 /* BrandCell.swift */,
+				A236E4E121E5B4C10004A3C2 /* BrandCell.xib */,
+			);
+			path = BrandCell;
+			sourceTree = "<group>";
+		};
 		A2C1DCA021E467C90034FE28 /* HelperClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +118,10 @@
 		A2C1DCA321E474630034FE28 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A236E4E521E5B61E0004A3C2 /* audi.jpeg */,
+				A236E4E721E5B61E0004A3C2 /* bmw.jpg */,
+				A236E4E621E5B61E0004A3C2 /* marchedrs.png */,
+				A236E4E421E5B61E0004A3C2 /* toyota.jpg */,
 				A2C1DCAA21E474850034FE28 /* car3.jpg */,
 				A2C1DCA821E474800034FE28 /* car2.jpeg */,
 				A2C1DCA621E4747B0034FE28 /* car1.jpg */,
@@ -121,6 +157,7 @@
 		A2C9080E21E3175400860365 /* TblMultipleSection */ = {
 			isa = PBXGroup;
 			children = (
+				A236E4DC21E5B1660004A3C2 /* ViewControllerFiles */,
 				A2C1DCAC21E475140034FE28 /* CarCell */,
 				A2C1DCA321E474630034FE28 /* Images */,
 				A2C1DCA021E467C90034FE28 /* HelperClass */,
@@ -262,17 +299,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A236E4EB21E5B61F0004A3C2 /* bmw.jpg in Resources */,
+				A236E4E921E5B61F0004A3C2 /* audi.jpeg in Resources */,
 				A2C9083721E3462F00860365 /* SectionCommentCell.xib in Resources */,
 				A2C1DCAB21E474850034FE28 /* car3.jpg in Resources */,
 				A2C1DCA921E474800034FE28 /* car2.jpeg in Resources */,
+				A236E4E321E5B4C10004A3C2 /* BrandCell.xib in Resources */,
 				A2C9081D21E3175800860365 /* LaunchScreen.storyboard in Resources */,
 				A2C1DCA521E474740034FE28 /* car4.jpg in Resources */,
 				A2C9084D21E35E2700860365 /* ImgCell.xib in Resources */,
 				A2C9081A21E3175800860365 /* Assets.xcassets in Resources */,
 				A2C9082E21E3188C00860365 /* Section2Cell.xib in Resources */,
+				A236E4E821E5B61F0004A3C2 /* toyota.jpg in Resources */,
 				A2C9084821E3591C00860365 /* TestVC.xib in Resources */,
 				A2C1DCA721E4747B0034FE28 /* car1.jpg in Resources */,
 				A2C9081521E3175400860365 /* Main.storyboard in Resources */,
+				A236E4EA21E5B61F0004A3C2 /* marchedrs.png in Resources */,
 				A2C9082A21E3187B00860365 /* Section1Cell.xib in Resources */,
 				A2C9083221E3189A00860365 /* Section3Cell.xib in Resources */,
 			);
@@ -290,9 +332,11 @@
 				A2C1DCAE21E475470034FE28 /* CollectionViewCell.swift in Sources */,
 				A2C9082D21E3188C00860365 /* Section2Cell.swift in Sources */,
 				A2C9083621E3462F00860365 /* SectionCommentCell.swift in Sources */,
+				A236E4E221E5B4C10004A3C2 /* BrandCell.swift in Sources */,
 				A2C9083121E3189A00860365 /* Section3Cell.swift in Sources */,
 				A2C1DCA221E467D40034FE28 /* GSImageViewerController.swift in Sources */,
 				A2C9084C21E35E2700860365 /* ImgCell.swift in Sources */,
+				A236E4DE21E5B1B80004A3C2 /* BrandListVC.swift in Sources */,
 				A2C9081021E3175400860365 /* AppDelegate.swift in Sources */,
 				A2C9082921E3187B00860365 /* Section1Cell.swift in Sources */,
 				A2C9084721E3591C00860365 /* TestVC.swift in Sources */,

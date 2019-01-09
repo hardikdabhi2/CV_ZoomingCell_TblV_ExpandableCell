@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageview:UIImageView!
     @IBOutlet weak var layoutTableHeight:NSLayoutConstraint!
     @IBOutlet weak var collectionviewBanner :UICollectionView!
+    @IBOutlet weak var pagecontroll:UIPageControl!
     
      let imageView = UIView()
     var arrayCar = ["car1.jpg","car2.jpeg","car3.jpg","car4.jpg"];
@@ -62,6 +63,8 @@ extension ViewController:UICollectionViewDataSource,UICollectionViewDelegate{
         return 1
         }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        self.pagecontroll.numberOfPages = self.arrayCar.count
+        self.pagecontroll.isHidden = !(self.arrayCar.count > 1)
         return self.arrayCar.count
     }
     
@@ -76,6 +79,13 @@ extension ViewController:UICollectionViewDataSource,UICollectionViewDelegate{
         let transInfo = GSTransitionInfo(fromView: collectionView)
         let imageviewr = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transInfo)
         self.present(imageviewr, animated: true, completion: nil)
+    }
+    //This is for Handle the page controll for collection view
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        pagecontroll?.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+    }
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        pagecontroll?.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
     }
 }
 
@@ -193,6 +203,9 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         }
         else{
             //Watever you want to do
+            
+            let BrandList = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "BrandListVC")
+            self.navigationController?.pushViewController(BrandList, animated: true)
         }
         self.setScrollviewHeight()
     }

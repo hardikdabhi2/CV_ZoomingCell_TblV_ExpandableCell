@@ -123,6 +123,7 @@
                     <connections>
                         <outlet property="collectionviewBanner" destination="Vth-hz-VsQ" id="vrL-v8-bJt"/>
                         <outlet property="layoutTableHeight" destination="wGo-LA-BL4" id="p9d-Gv-kzE"/>
+                        <outlet property="pagecontroll" destination="1ZV-Yw-Jmj" id="CTP-ia-2aj"/>
                         <outlet property="scrollviewMain" destination="xGE-aB-xpF" id="kV3-hB-rTk"/>
                         <outlet property="tableviewList" destination="bjG-ON-wmT" id="zcO-TI-nC3"/>
                     </connections>
@@ -130,6 +131,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="843.75" y="792.25352112676057"/>
+        </scene>
+        <!--Brand ListVC-->
+        <scene sceneID="GYP-6X-189">
+            <objects>
+                <viewController storyboardIdentifier="BrandListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JR2-uV-pfA" customClass="BrandListVC" customModule="TblMultipleSection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dod-Bo-b52">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="37I-Er-nS0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2qr-fD-9dq">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JR2-uV-pfA" id="uwo-x1-Voz"/>
+                                    <outlet property="delegate" destination="JR2-uV-pfA" id="0B6-fh-VSz"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="37I-Er-nS0" firstAttribute="bottom" secondItem="IDH-rv-ITD" secondAttribute="bottom" id="cYg-yc-Yys"/>
+                            <constraint firstItem="37I-Er-nS0" firstAttribute="top" secondItem="dod-Bo-b52" secondAttribute="top" id="qb7-dJ-zYY"/>
+                            <constraint firstItem="37I-Er-nS0" firstAttribute="trailing" secondItem="IDH-rv-ITD" secondAttribute="trailing" id="ubc-Ct-LZR"/>
+                            <constraint firstItem="37I-Er-nS0" firstAttribute="leading" secondItem="IDH-rv-ITD" secondAttribute="leading" id="v8X-HF-5CW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IDH-rv-ITD"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionLogoList" destination="37I-Er-nS0" id="6Ht-OG-ZB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZkY-0f-dac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.625" y="786.97183098591552"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aZa-ju-0LF">
